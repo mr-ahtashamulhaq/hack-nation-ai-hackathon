@@ -2,7 +2,7 @@
 
 # 🏠 PacketReady
 
-### A paperwork copilot for renters applying to affordable housing — built for Hack-Nation's 6th Global AI Hackathon
+### A paperwork copilot for renters applying to affordable housing , built for Hack-Nation's 6th Global AI Hackathon
 
 [![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-View_App-8b3a2a?style=for-the-badge)](https://packet-ready.vercel.app)
 [![Watch Demo](https://img.shields.io/badge/▶️_Watch_Demo-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/k98aCVORN2s)
@@ -48,11 +48,11 @@
 
 ## 🎉 The Hackathon
 
-Built solo for **Hack-Nation's 6th Global AI Hackathon**, run in collaboration with the **MIT Club of Northern California** and the **MIT Club of Germany**. The event ran six sponsored challenge tracks — this project is a submission to one of them.
+Built solo for **Hack-Nation's 6th Global AI Hackathon**, run in collaboration with the **MIT Club of Northern California** and the **MIT Club of Germany**. The event ran six sponsored challenge tracks , this project is a submission to one of them.
 
 ## 🎯 The Track We Chose
 
-> **Challenge 03 — RealDoor**, powered by **RealPage**
+> **Challenge 03 , RealDoor**, powered by **RealPage**
 
 An application-readiness copilot for renters navigating affordable housing paperwork.
 
@@ -64,22 +64,22 @@ Affordable housing programs publish real income rules, but they're:
 - 🧾 Paired with paperwork that's easy to submit wrong or incomplete
 - 🧮 Impossible to self-check without doing the math yourself against a table you have to go find
 
-The result? Applications get delayed **for weeks** over a document mistake that could've been caught in advance. This isn't a "who deserves housing" problem — it's a **friction problem**. Nobody needs an AI to make that call. Someone just needs to show up at the housing office with the right numbers already checked and the right documents already in hand.
+The result? Applications get delayed **for weeks** over a document mistake that could've been caught in advance. This isn't a "who deserves housing" problem , it's a **friction problem**. Nobody needs an AI to make that call. Someone just needs to show up at the housing office with the right numbers already checked and the right documents already in hand.
 
 ## 🛠️ What We Built
 
-**PacketReady** — a renter-facing web app scoped to:
+**PacketReady** , a renter-facing web app scoped to:
 
 | Scope | Value |
 |---|---|
 | 🌆 Metro area | Boston-Cambridge-Quincy, MA-NH HUD Metro FMR Area |
 | 🏛️ Program | LIHTC, using HUD's MTSP 60% Income Limits |
 | 📅 Rule year | FY2026, effective May 1, 2026 |
-| 📁 Documents | 100% synthetic — no real renter data, ever |
+| 📁 Documents | 100% synthetic , no real renter data, ever |
 
 ## 💡 How It Solves the Problem
 
-PacketReady never decides anything. It reads, extracts, calculates, and organizes — the renter confirms every step, and a real housing officer still makes the actual call. It's a paperwork assistant, not a judge.
+PacketReady never decides anything. It reads, extracts, calculates, and organizes , the renter confirms every step, and a real housing officer still makes the actual call. It's a paperwork assistant, not a judge.
 
 ## 🧭 The Three Screens
 
@@ -106,7 +106,7 @@ Ask "am I under the income limit?" and get your confirmed income, the actual HUD
 ### 3️⃣ Prepare
 **Renter-controlled packet**
 
-A checklist flags missing or expired documents. Preview, edit, download, or fully delete your packet — nothing is ever auto-sent anywhere.
+A checklist flags missing or expired documents. Preview, edit, download, or fully delete your packet , nothing is ever auto-sent anywhere.
 
 </td>
 </tr>
@@ -116,12 +116,12 @@ A checklist flags missing or expired documents. Preview, edit, download, or full
 
 These aren't nice-to-haves, they're the actual grading bar:
 
-- 🚫 **No decisioning** — never says "eligible," "qualify," "approved," or "denied," ever
+- 🚫 **No decisioning** , never says "eligible," "qualify," "approved," or "denied," ever
 - ✏️ **Every field is correctable** before it's used anywhere else
-- 🧪 **Prompt-injection resistant** — tested live by hiding a fake instruction inside an uploaded document
-- 🗑️ **Full deletion** — one click wipes the session, verifiably
-- ♿ **Accessible** — keyboard-operable, labeled fields, no color-only status indicators
-- 🔒 **Synthetic data only** — nothing here is a real person's real paperwork
+- 🧪 **Prompt-injection resistant** , tested live by hiding a fake instruction inside an uploaded document
+- 🗑️ **Full deletion** , one click wipes the session, verifiably
+- ♿ **Accessible** , keyboard-operable, labeled fields, no color-only status indicators
+- 🔒 **Synthetic data only** , nothing here is a real person's real paperwork
 
 ## ⚙️ Tech Stack
 
@@ -131,10 +131,10 @@ These aren't nice-to-haves, they're the actual grading bar:
 |---|---|:---:|
 | Frontend + Backend | **Next.js** (App Router, React) | 🆓 |
 | Styling | **Tailwind CSS** | 🆓 |
-| AI Model | **Groq** — `llama-3.3-70b-versatile` | 🆓 |
-| Document Parsing | `pdf-parse` (no OCR needed — synthetic docs are text-based) | 🆓 |
+| AI Model | **Groq** , `llama-3.3-70b-versatile` | 🆓 |
+| Document Parsing | `pdf-parse` (no OCR needed , synthetic docs are text-based) | 🆓 |
 | Rules Data | Static local JSON, hand-verified from HUD | 🆓 |
-| State | React state only — no database | 🆓 |
+| State | React state only , no database | 🆓 |
 | Hosting | **Vercel** (Hobby plan) | 🆓 |
 | Version Control | **GitHub** | 🆓 |
 
@@ -144,7 +144,7 @@ Every piece here is free, with no credit card and no waitlisted sponsor credits 
 
 ## 📊 Data Source
 
-Income limits are pulled directly from HUD's official [FY2026 MTSP Income Limits](https://www.huduser.gov/datasets/il/il2026/summary-mtsp.odn) for the **60% Income Limits** tier — the standard LIHTC set-aside test — frozen as a local file rather than fetched live, exactly as the challenge brief requires.
+Income limits are pulled directly from HUD's official [FY2026 MTSP Income Limits](https://www.huduser.gov/datasets/il/il2026/summary-mtsp.odn) for the **60% Income Limits** tier , the standard LIHTC set-aside test , frozen as a local file rather than fetched live, exactly as the challenge brief requires.
 
 ## 🔭 Scope
 
