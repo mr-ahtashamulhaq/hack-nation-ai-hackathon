@@ -17,7 +17,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "RentReady — Know your numbers. Walk in prepared.",
+  title: "PacketReady — Know your numbers. Walk in prepared.",
   description: "AI-powered housing application assistant. Upload a paystub, understand your income limits, and get your document checklist ready.",
 };
 

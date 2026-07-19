@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🏠 RentReady
+# 🏠 PacketReady
 
 ### *Know your numbers. Walk in prepared.*
 
@@ -25,11 +25,11 @@
 
 ---
 
-## 🎯 What is RentReady?
+## 🎯 What is PacketReady?
 
-**RentReady** is an AI-powered housing application assistant that helps renters understand whether their income meets housing program requirements — **before they ever walk into an office.**
+**PacketReady** is an AI-powered housing application assistant that helps renters understand whether their income meets housing program requirements — **before they ever walk into an office.**
 
-Millions of renters lose affordable housing opportunities not because they don't qualify, but because they walk in **unprepared**: wrong documents, missing paystubs, misunderstood income limits. RentReady solves this.
+Millions of renters lose affordable housing opportunities not because they don't qualify, but because they walk in **unprepared**: wrong documents, missing paystubs, misunderstood income limits. PacketReady solves this.
 
 ---
 
@@ -148,7 +148,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## 🛡️ AI Safety Design
 
-RentReady is built with **intentional AI constraints**:
+PacketReady is built with **intentional AI constraints**:
 
 - 🚫 The AI is **never** allowed to say "you are eligible" or "you qualify"
 - 🚫 A server-side word filter enforces this — even if the LLM tries to slip through

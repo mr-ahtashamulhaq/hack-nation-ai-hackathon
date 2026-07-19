@@ -27,9 +27,9 @@ export function Nav() {
       <div className="max-w-[1200px] mx-auto px-6 md:px-16 h-16 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <Link href="/" className="flex items-center gap-3 group">
-            <img src="/logo.svg" alt="RentReady logo" className="w-8 h-8 rounded-md" />
+            <img src="/logo.svg" alt="PacketReady logo" className="w-8 h-8 rounded-md" />
             <span className="font-mono text-primary font-bold tracking-[0.3em] uppercase">
-              RentReady
+              PacketReady
             </span>
           </Link>
         </div>

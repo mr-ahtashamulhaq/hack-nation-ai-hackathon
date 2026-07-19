@@ -1,8 +1,8 @@
-# RentReady — Deployment Guide
+# PacketReady — Deployment Guide
 
 ## Overview
 
-RentReady is a Next.js 16 application that uses the **Groq API** (LLM) for income extraction and rules Q&A. The simplest deployment path is **Vercel** (zero-config for Next.js). A Docker path is also covered.
+PacketReady is a Next.js 16 application that uses the **Groq API** (LLM) for income extraction and rules Q&A. The simplest deployment path is **Vercel** (zero-config for Next.js). A Docker path is also covered.
 
 ---
 
