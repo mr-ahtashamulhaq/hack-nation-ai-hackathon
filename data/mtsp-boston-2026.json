@@ -1,0 +1,13 @@
+{
+  "area": "Boston-Cambridge-Quincy, MA-NH HUD Metro FMR Area",
+  "program": "LIHTC (MTSP 60% Income Limits)",
+  "rule_year": "FY2026",
+  "effective_date": "2026-05-01",
+  "source_url": "www.huduser.gov/datasets/il/il2026/summary-mtsp?year=2026&reporttype_mtsp=hmfa&states=1&counties=0100199999&hmfa=METRO14460MM1120",
+  "income_limits_by_household_size": {
+    "1": 72000,
+    "2": 82320,
+    "3": 92580,
+    "4": 102840
+  }
+}
