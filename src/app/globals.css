@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #1a1a1a;
+  --color-foreground: #c8c4bc;
+  --color-primary: #8b3a2a;
+  --color-border: rgba(200, 196, 188, 0.1);
+  --color-muted: rgba(200, 196, 188, 0.5);
+  --color-accent-glow: rgba(139, 58, 42, 0.1);
+
+  --font-sans: var(--font-inter), sans-serif;
+  --font-mono: var(--font-jetbrains-mono), monospace;
+
+  --tracking-tight: -0.05em;
+  --tracking-utility: 0.3em;
+
+  --animate-flicker: flicker 4s infinite;
+  --animate-reveal-up: reveal-up 1.5s cubic-bezier(0.87, 0, 0.13, 1) forwards;
+
+  @keyframes flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  @keyframes reveal-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+:root {
+  color-scheme: dark;
+}
+
+/* Globally scale down all rem-based sizes (fonts, padding, margins) to match ~75% zoom */
+html {
+  font-size: 13px; /* Default is 16px */
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  /* Fixed vertical edge lines */
+  background-image: 
+    linear-gradient(to right, rgba(200,196,188,0.1) 1px, transparent 1px),
+    linear-gradient(to left, rgba(200,196,188,0.1) 1px, transparent 1px);
+  background-position: left center, right center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  scroll-behavior: smooth;
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Focus outline */
+*:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
