@@ -21,6 +21,11 @@
 <img src="https://img.shields.io/badge/AI%20Powered-Groq%20LLaMA%203.3-blueviolet?style=flat-square" />
 <img src="https://img.shields.io/badge/Screens-3%20Step%20Flow-orange?style=flat-square" />
 
+<br/>
+
+[![▶️ Watch Demo](https://img.shields.io/badge/▶%20Watch%20Demo-YouTube-red?style=for-the-badge&logo=youtube)](https://youtu.be/k98aCVORN2s)
+[![🌐 Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://packet-ready.vercel.app)
+
 </div>
 
 ---
@@ -212,6 +217,6 @@ MIT © 2026 Ahtasham ul Haq
 
 *Made with ❤️ for the Hack Nation AI Hackathon 2026*
 
-**[🚀 Live Demo](https://your-demo-url.vercel.app)** &nbsp;|&nbsp; **[📖 Deployment Guide](./DEPLOYMENT.md)** &nbsp;|&nbsp; **[🐛 Report Bug](https://github.com/mr-ahtashamulhaq/hack-nation-ai-hackathon/issues)**
+**[▶️ Watch Demo](https://youtu.be/k98aCVORN2s)** &nbsp;|&nbsp; **[🚀 Live Demo](https://packet-ready.vercel.app)** &nbsp;|&nbsp; **[📖 Deployment Guide](./DEPLOYMENT.md)** &nbsp;|&nbsp; **[🐛 Report Bug](https://github.com/mr-ahtashamulhaq/hack-nation-ai-hackathon/issues)**
 
 </div>
