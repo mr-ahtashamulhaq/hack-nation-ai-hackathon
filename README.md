@@ -2,221 +2,180 @@
 
 # 🏠 PacketReady
 
-### *Know your numbers. Walk in prepared.*
+### A paperwork copilot for renters applying to affordable housing — built for Hack-Nation's 6th Global AI Hackathon
 
-[![Next.js](https://img.shields.io/badge/Next.js-16.2-black?style=for-the-badge&logo=next.js)](https://nextjs.org)
-[![Groq](https://img.shields.io/badge/Groq-LLM-FF6B35?style=for-the-badge)](https://groq.com)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-06B6D4?style=for-the-badge&logo=tailwindcss)](https://tailwindcss.com)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-View_App-8b3a2a?style=for-the-badge)](https://packet-ready.vercel.app)
+[![Watch Demo](https://img.shields.io/badge/▶️_Watch_Demo-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/k98aCVORN2s)
 
-<br/>
-
-> **Built for the Hack Nation AI Hackathon 2026** 🏆
-> *Category: Civic Tech / Housing Access*
-
-<br/>
-
-<img src="https://img.shields.io/badge/Status-Live%20Demo-brightgreen?style=flat-square" />
-<img src="https://img.shields.io/badge/AI%20Powered-Groq%20LLaMA%203.3-blueviolet?style=flat-square" />
-<img src="https://img.shields.io/badge/Screens-3%20Step%20Flow-orange?style=flat-square" />
-
-<br/>
-
-[![▶️ Watch Demo](https://img.shields.io/badge/▶%20Watch%20Demo-YouTube-red?style=for-the-badge&logo=youtube)](https://youtu.be/k98aCVORN2s)
-[![🌐 Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://packet-ready.vercel.app)
+![Status](https://img.shields.io/badge/status-complete-brightgreen?style=flat-square)
+![Track](https://img.shields.io/badge/track-RealDoor%20(RealPage)-8b3a2a?style=flat-square)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white)
+![Groq](https://img.shields.io/badge/AI-Groq%20%7C%20Llama%203.3%2070B-orange?style=flat-square)
+![Vercel](https://img.shields.io/badge/deployed%20on-Vercel-black?style=flat-square&logo=vercel&logoColor=white)
+![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
 
 </div>
 
 ---
 
-## 🎯 What is PacketReady?
+## 🎬 See it in action
 
-**PacketReady** is an AI-powered housing application assistant that helps renters understand whether their income meets housing program requirements — **before they ever walk into an office.**
+<div align="center">
 
-Millions of renters lose affordable housing opportunities not because they don't qualify, but because they walk in **unprepared**: wrong documents, missing paystubs, misunderstood income limits. PacketReady solves this.
+| 🔴 Live App | ▶️ Demo Video |
+|:---:|:---:|
+| [packet-ready.vercel.app](https://packet-ready.vercel.app) | [Watch on YouTube](https://youtu.be/k98aCVORN2s) |
+
+</div>
 
 ---
 
-## 🏆 Hackathon Context
+## 📋 Table of Contents
 
-This project was submitted to the **[Hack Nation AI Hackathon 2026](https://hacknation.ai)** under the **Civic Tech / Housing Access** track.
+- [The Hackathon](#-the-hackathon)
+- [The Track We Chose](#-the-track-we-chose)
+- [The Problem](#-the-problem)
+- [What We Built](#-what-we-built)
+- [How It Solves the Problem](#-how-it-solves-the-problem)
+- [The Three Screens](#-the-three-screens)
+- [Non-Negotiables We Built In](#-non-negotiables-we-built-in)
+- [Tech Stack](#-tech-stack)
+- [Data Source](#-data-source)
+- [Scope](#-scope)
+- [Running It Locally](#-running-it-locally)
 
-| | |
+---
+
+## 🎉 The Hackathon
+
+Built solo for **Hack-Nation's 6th Global AI Hackathon**, run in collaboration with the **MIT Club of Northern California** and the **MIT Club of Germany**. The event ran six sponsored challenge tracks — this project is a submission to one of them.
+
+## 🎯 The Track We Chose
+
+> **Challenge 03 — RealDoor**, powered by **RealPage**
+
+An application-readiness copilot for renters navigating affordable housing paperwork.
+
+## 😮‍💨 The Problem
+
+Affordable housing programs publish real income rules, but they're:
+
+- 📄 Buried in dense government tables nobody has time to parse
+- 🧾 Paired with paperwork that's easy to submit wrong or incomplete
+- 🧮 Impossible to self-check without doing the math yourself against a table you have to go find
+
+The result? Applications get delayed **for weeks** over a document mistake that could've been caught in advance. This isn't a "who deserves housing" problem — it's a **friction problem**. Nobody needs an AI to make that call. Someone just needs to show up at the housing office with the right numbers already checked and the right documents already in hand.
+
+## 🛠️ What We Built
+
+**PacketReady** — a renter-facing web app scoped to:
+
+| Scope | Value |
 |---|---|
-| 🗓️ **Hackathon** | Hack Nation AI 2026 |
-| 🎯 **Track** | Civic Tech & Social Good |
-| 🤖 **AI Stack** | Groq API + LLaMA 3.3 70B |
-| 📍 **Data Source** | HUD MTSP Income Limits (FY2026) |
-| 🏙️ **Demo Area** | Boston-Cambridge-Quincy, MA-NH |
+| 🌆 Metro area | Boston-Cambridge-Quincy, MA-NH HUD Metro FMR Area |
+| 🏛️ Program | LIHTC, using HUD's MTSP 60% Income Limits |
+| 📅 Rule year | FY2026, effective May 1, 2026 |
+| 📁 Documents | 100% synthetic — no real renter data, ever |
 
----
+## 💡 How It Solves the Problem
 
-## ✨ Features
+PacketReady never decides anything. It reads, extracts, calculates, and organizes — the renter confirms every step, and a real housing officer still makes the actual call. It's a paperwork assistant, not a judge.
 
-| Feature | Description |
-|---|---|
-| 📄 **Smart Document Extraction** | Upload a PDF paystub or paste income text — AI extracts income, employer, pay period automatically |
-| 🧮 **Deterministic Calculations** | Income math is done by code, never by AI — guaranteed accuracy |
-| 💬 **Rules Q&A (Safety-Filtered)** | Ask natural language questions about income limits; AI is blocked from making eligibility decisions |
-| 📋 **Checklist Generator** | Screen 3 builds a personalized document checklist based on your confirmed profile |
-| 📤 **Export Ready** | Copy your checklist as plain text or print it |
-| 🔐 **Privacy First** | Nothing is stored server-side — all data lives in your browser session |
+## 🧭 The Three Screens
 
----
+<table>
+<tr>
+<td width="33%" valign="top">
 
-## 🖥️ The 3-Screen Flow
+### 1️⃣ Profile
+**Human-confirmed extraction**
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│   Screen 1: PROFILE         Screen 2: UNDERSTAND           │
-│   ────────────────          ─────────────────────          │
-│   Upload paystub or    ─►   See your income vs.            │
-│   paste income text         the HUD limit for your         │
-│   AI extracts fields        household size                  │
-│   You confirm numbers       Ask AI questions safely         │
-│                             ──────────────────────         │
-│                        ─►   Screen 3: PREPARE              │
-│                             ──────────────────             │
-│                             Get your document              │
-│                             checklist                       │
-│                             Copy & print it                 │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
+Upload a synthetic pay stub. The app pulls out only allowlisted fields (name, gross pay, pay period, employer), shows the exact source text behind each one, and waits for you to confirm or fix it before anything downstream uses it.
 
----
+</td>
+<td width="33%" valign="top">
 
-## 🚀 Quick Start (Local)
+### 2️⃣ Understand
+**Cited rules, real math**
 
-### 1. Clone the repo
+Ask "am I under the income limit?" and get your confirmed income, the actual HUD limit for your household size, the arithmetic connecting them, the source table, and the effective date. Never a yes/no verdict.
+
+</td>
+<td width="33%" valign="top">
+
+### 3️⃣ Prepare
+**Renter-controlled packet**
+
+A checklist flags missing or expired documents. Preview, edit, download, or fully delete your packet — nothing is ever auto-sent anywhere.
+
+</td>
+</tr>
+</table>
+
+## 🛡️ Non-Negotiables We Built In
+
+These aren't nice-to-haves, they're the actual grading bar:
+
+- 🚫 **No decisioning** — never says "eligible," "qualify," "approved," or "denied," ever
+- ✏️ **Every field is correctable** before it's used anywhere else
+- 🧪 **Prompt-injection resistant** — tested live by hiding a fake instruction inside an uploaded document
+- 🗑️ **Full deletion** — one click wipes the session, verifiably
+- ♿ **Accessible** — keyboard-operable, labeled fields, no color-only status indicators
+- 🔒 **Synthetic data only** — nothing here is a real person's real paperwork
+
+## ⚙️ Tech Stack
+
+<div align="center">
+
+| Layer | Tool | Cost |
+|---|---|:---:|
+| Frontend + Backend | **Next.js** (App Router, React) | 🆓 |
+| Styling | **Tailwind CSS** | 🆓 |
+| AI Model | **Groq** — `llama-3.3-70b-versatile` | 🆓 |
+| Document Parsing | `pdf-parse` (no OCR needed — synthetic docs are text-based) | 🆓 |
+| Rules Data | Static local JSON, hand-verified from HUD | 🆓 |
+| State | React state only — no database | 🆓 |
+| Hosting | **Vercel** (Hobby plan) | 🆓 |
+| Version Control | **GitHub** | 🆓 |
+
+</div>
+
+Every piece here is free, with no credit card and no waitlisted sponsor credits required.
+
+## 📊 Data Source
+
+Income limits are pulled directly from HUD's official [FY2026 MTSP Income Limits](https://www.huduser.gov/datasets/il/il2026/summary-mtsp.odn) for the **60% Income Limits** tier — the standard LIHTC set-aside test — frozen as a local file rather than fetched live, exactly as the challenge brief requires.
+
+## 🔭 Scope
+
+**In scope:** the three screens above, one metro, one program, one rule year, synthetic documents, live on Vercel.
+
+**Out of scope:** property discovery/search, multiple metros or programs, real user accounts, admin dashboards, live HUD data fetching.
+
+## 🚀 Running It Locally
 
 ```bash
-git clone https://github.com/mr-ahtashamulhaq/hack-nation-ai-hackathon.git
-cd hack-nation-ai-hackathon
-```
-
-### 2. Install dependencies
-
-```bash
+git clone <this-repo>
+cd packetready
 npm install
 ```
 
-### 3. Set up environment
-
-```bash
-cp .env.example .env
-```
-
-Edit `.env` and add your Groq API key:
+Create a `.env.local` file:
 
 ```
-GROQ_API_KEY=gsk_your_key_here
+GROQ_API_KEY=your_groq_api_key_here
 ```
 
-Get a free key at 👉 [console.groq.com/keys](https://console.groq.com/keys)
-
-### 4. Run the dev server
+Then run:
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-
----
-
-## 🏗️ Tech Stack
-
-```
-┌──────────────────────────────────────────────────┐
-│  Frontend                                        │
-│  ├── Next.js 16.2 (App Router)                  │
-│  ├── React 19                                    │
-│  ├── Tailwind CSS v4                             │
-│  └── TypeScript 5                               │
-├──────────────────────────────────────────────────┤
-│  AI / LLM                                        │
-│  ├── Groq SDK                                   │
-│  └── LLaMA 3.3 70B Versatile                   │
-├──────────────────────────────────────────────────┤
-│  Document Processing                             │
-│  └── pdf-parse (server-side PDF text extract)   │
-├──────────────────────────────────────────────────┤
-│  Data                                            │
-│  └── HUD MTSP FY2026 Income Limits (JSON)       │
-└──────────────────────────────────────────────────┘
-```
-
----
-
-## 🛡️ AI Safety Design
-
-PacketReady is built with **intentional AI constraints**:
-
-- 🚫 The AI is **never** allowed to say "you are eligible" or "you qualify"
-- 🚫 A server-side word filter enforces this — even if the LLM tries to slip through
-- ✅ All income math (delta, comparison) is done by deterministic code
-- ✅ Every response cites the source data and effective date
-- ✅ The app always reminds users that a **housing officer** makes final decisions
-
----
-
-## 📁 Project Structure
-
-```
-hack-nation-ai-hackathon/
-├── src/
-│   ├── app/
-│   │   ├── page.tsx              # Screen 1 — Profile
-│   │   ├── understand/page.tsx   # Screen 2 — Understand
-│   │   ├── prepare/page.tsx      # Screen 3 — Prepare
-│   │   └── api/
-│   │       ├── extract/route.ts  # POST — income extraction via Groq
-│   │       └── rules-qa/route.ts # POST — Q&A with safety filters
-│   ├── components/
-│   │   ├── ExtractionPanel.tsx
-│   │   ├── ChecklistPanel.tsx
-│   │   └── ExportPanel.tsx
-│   └── lib/
-│       └── session-context.tsx   # Client-side session state
-├── data/
-│   ├── mtsp-boston-2026.json     # HUD income limits data
-│   └── test-docs/                # Synthetic test documents
-├── .env.example                  # Environment variable template
-├── DEPLOYMENT.md                 # Full deployment guide
-└── package.json
-```
-
----
-
-## 🌐 Deploy
-
-See the full **[DEPLOYMENT.md](./DEPLOYMENT.md)** guide for:
-- ▲ Vercel (one-click, recommended)
-- 🖥️ Self-hosted Node.js
-- 🐳 Docker
-
----
-
-## 👤 Author
-
-**Ahtasham ul Haq**
-GitHub: [@mr-ahtashamulhaq](https://github.com/mr-ahtashamulhaq)
-
----
-
-## 📄 License
-
-MIT © 2026 Ahtasham ul Haq
-
 ---
 
 <div align="center">
 
-*Made with ❤️ for the Hack Nation AI Hackathon 2026*
-
-**[▶️ Watch Demo](https://youtu.be/k98aCVORN2s)** &nbsp;|&nbsp; **[🚀 Live Demo](https://packet-ready.vercel.app)** &nbsp;|&nbsp; **[📖 Deployment Guide](./DEPLOYMENT.md)** &nbsp;|&nbsp; **[🐛 Report Bug](https://github.com/mr-ahtashamulhaq/hack-nation-ai-hackathon/issues)**
+Built solo, with a lot of vibe coding, for renters who deserve a faster path to the paperwork they need. 🏡
 
 </div>
