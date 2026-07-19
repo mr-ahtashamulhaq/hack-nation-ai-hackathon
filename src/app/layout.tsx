@@ -17,8 +17,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PacketReady",
-  description: "Verify LIHTC eligibility without exposing your data.",
+  title: "RentReady — Know your numbers. Walk in prepared.",
+  description: "AI-powered housing application assistant. Upload a paystub, understand your income limits, and get your document checklist ready.",
 };
 
 export default function RootLayout({

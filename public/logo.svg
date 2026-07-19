@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background -->
+  <rect width="200" height="200" rx="32" fill="#1a1a1a"/>
+
+  <!-- House body -->
+  <rect x="55" y="105" width="90" height="68" rx="4" fill="#8b3a2a"/>
+
+  <!-- Roof (triangle) -->
+  <polygon points="100,42 155,110 45,110" fill="#c8c4bc"/>
+
+  <!-- Door -->
+  <rect x="84" y="130" width="32" height="43" rx="4" fill="#1a1a1a"/>
+
+  <!-- Door knob -->
+  <circle cx="113" cy="153" r="3" fill="#c8c4bc"/>
+
+  <!-- Left window -->
+  <rect x="61" y="118" width="16" height="16" rx="2" fill="#1a1a1a" opacity="0.6"/>
+
+  <!-- Right window -->
+  <rect x="123" y="118" width="16" height="16" rx="2" fill="#1a1a1a" opacity="0.6"/>
+
+  <!-- Chimney -->
+  <rect x="120" y="55" width="14" height="36" rx="2" fill="#8b3a2a"/>
+
+  <!-- Smoke dots (decorative) -->
+  <circle cx="127" cy="48" r="3.5" fill="#c8c4bc" opacity="0.4"/>
+  <circle cx="133" cy="40" r="2.5" fill="#c8c4bc" opacity="0.25"/>
+  <circle cx="121" cy="38" r="2" fill="#c8c4bc" opacity="0.2"/>
+</svg>
